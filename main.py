@@ -1,4 +1,4 @@
-from universidade import Universidade as University
+from university import University
 
 
 def display_summary(universities, current_univ):

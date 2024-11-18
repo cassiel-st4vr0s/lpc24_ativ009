@@ -1,22 +1,22 @@
 class Professor:
-    def __init__(self, nome, idProfessor, departamentoId):
-        self.nome = nome
-        self.idProfessor = idProfessor
-        self.departamentoId = departamentoId
-        self.disciplinas = []
+    def __init__(self, name, professor_id, department_id):
+        self.name = name
+        self.professor_id = professor_id
+        self.department_id = department_id
+        self.courses = []
     
-    def adicionarDisciplina(self, nome, id):
-        from disciplina import Disciplina
-        disc = Disciplina(nome, id, self.idProfessor)
-        self.disciplinas.append(disc)
-        return disc
+    def add_course(self, name, id):
+        from course import Course
+        course = Course(name, id, self.professor_id)
+        self.courses.append(course)
+        return course
     
-    def deletarDisciplina(self, id):
-        for disc in self.disciplinas:
-            if disc.id == id:
-                self.disciplinas.remove(disc)
+    def delete_course(self, id):
+        for course in self.courses:
+            if course.id == id:
+                self.courses.remove(course)
                 return True
         return False
     
-    def listarDisciplinas(self):
-        return self.disciplinas
+    def list_courses(self):
+        return self.courses
