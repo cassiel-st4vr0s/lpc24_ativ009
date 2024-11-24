@@ -6,7 +6,7 @@ class Professor:
         self.courses = []
     
     def add_course(self, name, id):
-        from course import Course
+        from ativ009.course import Course
         course = Course(name, id, self.professor_id)
         self.courses.append(course)
         return course

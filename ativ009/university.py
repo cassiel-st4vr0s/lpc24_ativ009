@@ -6,7 +6,7 @@ class University:
         self.departments = []
 
     def create_department(self, name, id, faculty_id):
-        from department import Department
+        from ativ009.department import Department
         dept = Department(name, id, faculty_id)
         self.departments.append(dept)
         return dept

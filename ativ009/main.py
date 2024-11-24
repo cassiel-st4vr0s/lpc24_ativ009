@@ -1,5 +1,4 @@
-from university import University
-
+from ativ009.university import University
 
 def display_summary(universities, current_univ):
     """Display a summary of the university system state."""

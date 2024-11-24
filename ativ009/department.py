@@ -6,7 +6,7 @@ class Department:
         self.professors = []
 
     def add_professor(self, name, professor_id):
-        from professor import Professor
+        from ativ009.professor import Professor
         # Check if professor already exists
         if any(p.professor_id == professor_id for p in self.professors):
             return None
