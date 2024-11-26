@@ -1,22 +1,22 @@
 class ScoreManager:
     def __init__(self, max_score: int):
-        self.player1Score = 0
-        self.player2Score = 0
+        self.player1_score = 0
+        self.player2_score = 0
         self.maxScore = max_score
     
-    def updateScore(self, player: int):
+    def update_score(self, player: int):
         if player == 1:
-            self.player1Score += 1
+            self.player1_score += 1
         else:
-            self.player2Score += 1
-        print(f"Score - P1: {self.player1Score} | P2: {self.player2Score}")
+            self.player2_score += 1
+        print(f"Score - P1: {self.player1_score} | P2: {self.player2_score}")
     
-    def checkVictory(self) -> bool:
-        return self.player1Score >= self.maxScore or self.player2Score >= self.maxScore
+    def check_victory(self) -> bool:
+        return self.player1_score >= self.maxScore or self.player2_score >= self.maxScore
     
     def reset(self):
-        self.player1Score = 0
-        self.player2Score = 0
+        self.player1_score = 0
+        self.player2_score = 0
     
-    def getScore(self, player: int) -> int:
-        return self.player1Score if player == 1 else self.player2Score
+    def get_score(self, player: int) -> int:
+        return self.player1_score if player == 1 else self.player2_score

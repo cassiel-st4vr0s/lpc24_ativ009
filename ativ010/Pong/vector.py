@@ -7,7 +7,7 @@ class Vector:
         self.dx = -self.dx
         self.dy = -self.dy
     
-    def setDirection(self, dx: float, dy: float):
+    def set_direction(self, dx: float, dy: float):
         self.dx = dx
         self.dy = dy
     

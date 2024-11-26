@@ -6,26 +6,26 @@ class Ball:
         self.position = Coord(20, 10)  # Center of the field
         self.velocity = Vector(1, 0)
         self.size = (1, 1)
-        self.maxSpeedX = 2.0
-        self.maxSpeedY = 2.0
+        self.max_speedx = 2.0
+        self.max_speedy = 2.0
     
     def move(self):
         self.position.setX(self.position.getX() + self.velocity.dx)
         self.position.setY(self.position.getY() + self.velocity.dy)
     
-    def reverseDirection(self):
+    def reverse_direction(self):
         self.velocity.reverse()
     
     def reset(self):
         self.position = Coord(20, 10)
         self.velocity = Vector(1, 0)
     
-    def limitSpeed(self):
-        if abs(self.velocity.dx) > self.maxSpeedX:
-            self.velocity.dx = self.maxSpeedX * (1 if self.velocity.dx > 0 else -1)
-        if abs(self.velocity.dy) > self.maxSpeedY:
-            self.velocity.dy = self.maxSpeedY * (1 if self.velocity.dy > 0 else -1)
+    def limit_speed(self):
+        if abs(self.velocity.dx) > self.max_speedx:
+            self.velocity.dx = self.max_speedx * (1 if self.velocity.dx > 0 else -1)
+        if abs(self.velocity.dy) > self.max_speedy:
+            self.velocity.dy = self.max_speedy * (1 if self.velocity.dy > 0 else -1)
     
     def accelerate(self):
         self.velocity.scale(1.1)
-        self.limitSpeed()
+        self.limit_speed()

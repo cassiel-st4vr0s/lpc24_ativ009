@@ -1,10 +1,10 @@
 class Keys:
     def __init__(self):
-        self.upKey = 'w'
-        self.downKey = 's'
+        self.up_key = 'w'
+        self.down_key = 's'
     
-    def getUpKey(self) -> str:
-        return self.upKey
+    def getup_key(self) -> str:
+        return self.up_key
     
-    def getDownKey(self) -> str:
-        return self.downKey
+    def getdown_key(self) -> str:
+        return self.down_key
