@@ -2,7 +2,7 @@ from coord import Coord
 from vector import Vector
 class Ball:
     def __init__(self):
-        self.position = Coord(20, 10)  # Center of the field
+        self.position = Coord(20, 10)  #center of the field
         self.velocity = Vector(1, 0)
         self.size = (1, 1)
         self.max_speed_x = 2.0

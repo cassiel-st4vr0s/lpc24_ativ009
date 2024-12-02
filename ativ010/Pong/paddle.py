@@ -1,7 +1,7 @@
 from coord import Coord
 class Paddle:
     def __init__(self, player_number: int):
-        self.position = Coord(0, 10)  # Starting position
+        self.position = Coord(0, 10)  #starting position
         self.width = 2
         self.height = 6
         self.speed = 1.0
@@ -16,7 +16,7 @@ class Paddle:
             self.position.set_y(self.position.get_y() + self.speed)
     
     def check_wall_collision(self) -> bool:
-        # Check if paddle hits top or bottom walls
+        #check if paddle hits top or bottom walls
         return self.position.get_y() <= 0 or self.position.get_y() + self.height >= 20
     
     def reset(self):
