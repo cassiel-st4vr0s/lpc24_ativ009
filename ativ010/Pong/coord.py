@@ -3,14 +3,14 @@ class Coord:
         self.x = x
         self.y = y
     
-    def getX(self) -> float:
+    def get_x(self) -> float:
         return self.x
     
-    def getY(self) -> float:
+    def get_y(self) -> float:
         return self.y
     
-    def setX(self, x: float):
+    def set_x(self, x: float):
         self.x = x
     
-    def setY(self, y: float):
+    def set_y(self, y: float):
         self.y = y

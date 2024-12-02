@@ -3,8 +3,8 @@ class Keys:
         self.up_key = 'w'
         self.down_key = 's'
     
-    def getup_key(self) -> str:
+    def get_up_key(self) -> str:
         return self.up_key
     
-    def getdown_key(self) -> str:
+    def get_down_key(self) -> str:
         return self.down_key

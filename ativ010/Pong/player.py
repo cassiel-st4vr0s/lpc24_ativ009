@@ -8,9 +8,11 @@ class Player:
     
     def handle_input(self, key_event: str):
         if key_event == self.controls.get_up_key():
-            self.paddle.isMovingUp = True
+            self.paddle.is_moving_up = True
+            self.paddle.is_moving_down = False
         elif key_event == self.controls.get_down_key():
-            self.paddle.isMovingDown = False
+            self.paddle.is_moving_down = True
+            self.paddle.is_moving_up = False
     
     def update_score(self):
         self.score += 1

@@ -2,7 +2,7 @@ class ScoreManager:
     def __init__(self, max_score: int):
         self.player1_score = 0
         self.player2_score = 0
-        self.maxScore = max_score
+        self.max_score = max_score
     
     def update_score(self, player: int):
         if player == 1:
@@ -12,7 +12,7 @@ class ScoreManager:
         print(f"Score - P1: {self.player1_score} | P2: {self.player2_score}")
     
     def check_victory(self) -> bool:
-        return self.player1_score >= self.maxScore or self.player2_score >= self.maxScore
+        return self.player1_score >= self.max_score or self.player2_score >= self.max_score
     
     def reset(self):
         self.player1_score = 0
